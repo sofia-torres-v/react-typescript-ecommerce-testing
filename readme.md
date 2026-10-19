@@ -1,4 +1,4 @@
-# # Market App — E-commerce con React, TypeScript y Testing
+# Market App — E-commerce con React, TypeScript y Testing
 
 ## Descripción del Proyecto
 Este proyecto implementa pruebas automáticas en una aplicación desarrollada con **React + TypeScript**, enfocada en buenas prácticas, modularización y cobertura de código usando **Jest** y **React Testing Library**.
