@@ -12,13 +12,12 @@
 
 </div>
 
-## Vistazo rápido
+## Descripción
+
+Market App es una aplicación de comercio electrónico que permite explorar productos, filtrarlos por categorías, gestionar un carrito de compras y completar pedidos mediante formularios validados.
 
 <div align="center">
-
-### ✨ Login exitoso y catálogo de productos
 <img src="src/assets/login-exitoso.png" alt="Login exitoso y catálogo" width="85%" />
-
 </div>
 
 | Filtrado por Categorías | Carrito de Compras |
@@ -27,12 +26,7 @@
 
 | Formulario de Envío | Pedido Exitoso |
 | :---: | :---: |
-| ![Formulario de envío](src/assets/formulario-vacio.png) | ![Pedido registrado con éxito](src/assets/pedido-exitoso.png) |
-
-| Inicio de Sesión | Error de Credenciales |
-| :---: | :---: |
-| ![Pantalla de login](src/assets/login.png) | ![Error de credenciales](src/assets/login-error.png) |
-
+| ![Pedido registrado con éxito](src/assets/pedido.png) | ![Pantalla de login](src/assets/login.png) |
 
 ## Funcionalidades
 
