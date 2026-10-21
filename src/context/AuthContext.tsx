@@ -3,7 +3,7 @@ import { createContext, useContext, useState, useEffect, ReactNode } from 'react
 interface AuthContextType {
   isAuthenticated: boolean;
   username: string | null;
-  loading: boolean; 
+  loading: boolean;
   login: (username: string, token: string) => void;
   logout: () => void;
 }
@@ -34,7 +34,7 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
       setIsAuthenticated(true);
       setUsername(storedUsername);
     }
-    setLoading(false); 
+    setLoading(false);
   }, []);
 
   const login = (username: string, token: string) => {

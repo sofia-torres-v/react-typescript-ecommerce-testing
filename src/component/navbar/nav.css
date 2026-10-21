@@ -1,8 +1,10 @@
+
 .logo {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .nav__content {
     display: flex;
     align-items: center;
@@ -28,6 +30,7 @@
     display: flex;
     align-items: center;
     gap: 2px;
+    text-decoration: none;
 }
 
 .nav__logo-image {
@@ -44,7 +47,7 @@
 
 .nav__cart-box {
     position: relative;
-    margin-right: 10px;
+    /* margin-right: 10px; */
     text-align: center;
 }
 
@@ -74,7 +77,7 @@
 
 .title-hello {
     color: white;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
 }
 
 .box-hello {
@@ -82,23 +85,46 @@
     align-items: center;
     gap: 20px;
 }
+
+/* Avatar de usuario */
+.nav__user-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.user-avatar {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1.5px solid rgba(255, 255, 255, 0.4);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.user-text {
+    display: none;
+    font-size: 1rem;
+    margin-top: 0.3rem;
+    color: #fff;
+}
+
+/* Acciones del navbar */
 .nav__actions {
     display: flex;
     align-items: center;
-    gap: 0px;
+    gap: 8px;
 }
 
 .logout-icon {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     color: #fff;
-}
-.logout-btn {
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-    background: none;
-    border: none;
-    cursor: pointer;
 }
 
 .logout-btn:hover .logout-icon {
@@ -108,7 +134,7 @@
 .cart-text,
 .logout-text {
     display: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 0.3rem;
     color: #fff;
 }
@@ -118,20 +144,24 @@
     flex-direction: column;
     align-items: center;
     background: none;
+    border: none;
     cursor: pointer;
     text-align: center;
     color: #fff;
+    gap: 8px;
 }
 
+/* Desktop */
 @media (min-width: 750px) {
     .nav__logo-image {
-        width: 60px;
+        width: 50px;
     }
     .nav__logo-text {
-        font-size: 2.8rem;
+        display: block;
+        font-size: 2.2rem;
     }
     .nav__cart-icon {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
     .content-logo {
         flex-direction: row;
@@ -143,26 +173,29 @@
         gap: 50px;
     }
     .title-hello {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     .logout-icon {
-        font-size: 3rem;
-    }
-    .cart-text,
-    .logout-text {
-        font-size: 1.5rem;
-    }
-    .nav__logo-text {
-        display: block;
+        font-size: 2.2rem;
     }
     .cart-text,
     .logout-text {
         display: block;
+        font-size: 1.2rem;
+    }
+    .user-text {
+        display: block;
+        font-size: 1.2rem;
+    }
+    .user-avatar {
+        width: 30px;
+        height: 30px;
+        font-size: 1.2rem;
     }
     .nav__cart-counter {
         top: -12px;
         right: -4px;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         line-height: 1.6;
         padding: 0 8px;
     }
@@ -170,3 +203,4 @@
         gap: 30px;
     }
 }
+

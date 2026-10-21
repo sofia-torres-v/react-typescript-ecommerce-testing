@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">84.61% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>8/8</span>
+                <span class='fraction'>11/13</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">50% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>1/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">84.61% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>8/8</span>
+                <span class='fraction'>11/13</span>
             </div>
         
             
@@ -100,14 +100,54 @@
 <a name='L35'></a><a href='#L35'>35</a>
 <a name='L36'></a><a href='#L36'>36</a>
 <a name='L37'></a><a href='#L37'>37</a>
-<a name='L38'></a><a href='#L38'>38</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">2x</span>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -137,36 +177,56 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Link } from "react-router-dom";
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 import CartIcon from "../cartIcon/CartIcon";
+import { FiLogOut } from "react-icons/fi";
 import "./nav.css";
 &nbsp;
 const Nav = () =&gt; {
-    const { username, isAuthenticated } = useAuth();
+    const { username, isAuthenticated, logout } = useAuth();
+    const navigate = useNavigate();
+&nbsp;
+    const handleLogout = <span class="fstat-no" title="function not covered" >() =</span>&gt; {
+<span class="cstat-no" title="statement not covered" >        logout();</span>
+<span class="cstat-no" title="statement not covered" >        navigate("/");</span>
+    };
+&nbsp;
     return (
         &lt;nav className="nav"&gt;
-&nbsp;
             &lt;div className="nav__content container"&gt;
 &nbsp;
-                    &lt;div className="nav__logo-box"&gt;
-                        &lt;img className="nav__logo-image" src="./src/assets/icon-logo.webp" alt="Logo de Market" /&gt;
-                        &lt;span className="nav__logo-text"&gt;Market&lt;/span&gt;
-                    &lt;/div&gt;
+                {/* Logo clicable */}
+                &lt;Link to="/products" className="nav__logo-box"&gt;
+                    &lt;img
+                        className="nav__logo-image"
+                        src="./src/assets/icon-logo.webp"
+                        alt="Logo de Market"
+                    /&gt;
+                    &lt;span className="nav__logo-text"&gt;Market&lt;/span&gt;
+                &lt;/Link&gt;
 &nbsp;
-                    &lt;div className="nav__links"&gt;
-                        &lt;Link to="/products" className="nav__link"&gt;Products&lt;/Link&gt;
-                    &lt;/div&gt;
-&nbsp;
-                &lt;div className="box-hello"&gt;
+                {/* Mensaje centrado */}
+                &lt;div className="nav__center-text"&gt;
                     {isAuthenticated ? (
-                        &lt;h1 className="title-hello"&gt;¡Hola! {username}&lt;/h1&gt;
+                        &lt;h1 className="title-hello"&gt;¡Hola {username}!&lt;/h1&gt;
                     ) : (
                         &lt;h1 className="title-hello"&gt;¡Bienvenido! Inicia sesión&lt;/h1&gt;
                     )}
+                &lt;/div&gt;
+&nbsp;
+                {/* Carrito y botón salir */}
+                &lt;div className="nav__actions"&gt;
                     &lt;div className="nav__cart-box"&gt;
                         &lt;CartIcon /&gt;
+                        &lt;span className="cart-text"&gt;Mi carrito&lt;/span&gt;
                     &lt;/div&gt;
+                    {isAuthenticated &amp;&amp; (
+                        &lt;button onClick={handleLogout} className="logout-btn"&gt;
+                            &lt;FiLogOut className="logout-icon" /&gt;
+                            &lt;span className="logout-text"&gt;Salir&lt;/span&gt;
+                        &lt;/button&gt;
+                    )}
                 &lt;/div&gt;
             &lt;/div&gt;
         &lt;/nav&gt;
@@ -181,7 +241,7 @@ export default Nav;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-12-07T23:19:13.275Z
+                at 2026-10-21T18:08:48.744Z
             </div>
         <script src="../../prettify.js"></script>
         <script>

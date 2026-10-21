@@ -1,3 +1,4 @@
+
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 import CartIcon from "../cartIcon/CartIcon";
@@ -24,20 +25,26 @@ const Nav = () => {
                         src="./src/assets/icon-logo.webp"
                         alt="Logo de Market"
                     />
-                    <span className="nav__logo-text">Market</span>
+                    <span className="nav__logo-text">Market App</span>
                 </Link>
 
                 {/* Mensaje centrado */}
                 <div className="nav__center-text">
-                    {isAuthenticated ? (
-                        <h1 className="title-hello">¡Hola {username}!</h1>
-                    ) : (
-                        <h1 className="title-hello">¡Bienvenido! Inicia sesión</h1>
-                    )}
+                    <h1 className="title-hello">
+                        {isAuthenticated ? `¡Hola ${username}!` : '¡Bienvenido! Inicia sesión'}
+                    </h1>
                 </div>
 
-                {/* Carrito y botón salir */}
+                {/* Avatar, carrito y botón salir */}
                 <div className="nav__actions">
+                    {isAuthenticated && (
+                        <div className="nav__user-box">
+                            <div className="user-avatar">
+                                {username?.charAt(0).toUpperCase()}
+                            </div>
+                            <span className="user-text">{username}</span>
+                        </div>
+                    )}
                     <div className="nav__cart-box">
                         <CartIcon />
                         <span className="cart-text">Mi carrito</span>
@@ -55,3 +62,4 @@ const Nav = () => {
 };
 
 export default Nav;
+
