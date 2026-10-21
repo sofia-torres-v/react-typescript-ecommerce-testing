@@ -24,7 +24,7 @@ Market App es una aplicación de comercio electrónico que permite explorar prod
 | :---: | :---: |
 | ![Filtrado por categorías](src/assets/filtro-categorias.png) | ![Carrito de compras](src/assets/carrito-lleno.png) |
 
-| Formulario de Envío | Pedido Exitoso |
+| Pedido Exitoso  | Inicio de Sesión |
 | :---: | :---: |
 | ![Pedido registrado con éxito](src/assets/pedido.png) | ![Pantalla de login](src/assets/login.png) |
 
@@ -133,7 +133,7 @@ El proyecto utiliza **Jest** y **React Testing Library** para validar componente
 
 ### Cobertura de código
 
-<div align="center">
+<div align="left">
 <img src="src/assets/coverage-components.png" alt="Cobertura de componentes" width="55%" />
 <img src="src/assets/coverage-services.png" alt="Cobertura de services y utils" width="55%" />
 </div>
