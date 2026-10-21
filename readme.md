@@ -1,32 +1,31 @@
 
-# 🛍️ Market App
-
 <div align="center">
+
+# 🛍️ Market App
 
 [![React](https://img.shields.io/badge/React-18+-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Jest](https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white)](https://jestjs.io/)
 [![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 
-*E-commerce desarrollado con React y TypeScript, enfocado en modularización, tipado fuerte y pruebas automatizadas con Jest y React Testing Library.*
-
 </div>
 
 ## Descripción
 
-Market App es una aplicación de comercio electrónico que permite explorar productos, filtrarlos por categorías, gestionar un carrito de compras y completar pedidos mediante formularios validados.
+Aplicación de comercio electrónico desarrollada con React y TypeScript. Permite explorar productos, filtrarlos por categorías, gestionar un carrito de compras y completar pedidos con formularios validados. Enfocada en modularización, tipado fuerte y pruebas automatizadas con Jest y React Testing Library.
 
 <div align="center">
 <img src="src/assets/login-exitoso.png" alt="Login exitoso y catálogo" width="85%" />
-</div>
 
 | Filtrado por Categorías | Carrito de Compras |
 | :---: | :---: |
 | ![Filtrado por categorías](src/assets/filtro-categorias.png) | ![Carrito de compras](src/assets/carrito-lleno.png) |
 
-| Pedido Exitoso  | Inicio de Sesión |
+| Pedido Exitoso | Inicio de Sesión |
 | :---: | :---: |
 | ![Pedido registrado con éxito](src/assets/pedido.png) | ![Pantalla de login](src/assets/login.png) |
+
+</div>
 
 ## Funcionalidades
 
